@@ -1,0 +1,37 @@
+# User Stories: Disaster Relief Volunteer Portal
+
+This document lists all the **user stories** for the Disaster Relief Volunteer Portal. Each story describes a user goal and the expected outcome.
+
+---
+
+## **1. Help Request Users**
+1. **As a user**, I want to submit a help request with my details, location, and type of need, so that I can get assistance during a disaster.  
+2. **As a user**, I want to see if my request has been queued when offline, so I know it will be sent later.  
+3. **As a user**, I want to receive a confirmation after submitting a request, so I know my request is successfully recorded.  
+
+---
+
+## **2. Volunteers**
+4. **As a volunteer**, I want to register myself on the platform, so that I can participate in disaster relief activities.  
+5. **As a volunteer**, I want to view available help requests, so that I can choose which requests to respond to.  
+6. **As a volunteer**, I want to see my assigned tasks and their status, so that I can manage my efforts efficiently.  
+
+---
+
+## **3. System / Admin (Future Scope)**
+7. **As an admin**, I want to see all queued requests, so that I can track pending submissions.  
+8. **As an admin**, I want to manage volunteers and assign tasks, so that help is distributed efficiently.  
+9. **As a system**, I want to automatically sync queued requests when online, so that user submissions are never lost.  
+
+---
+
+## **4. Navigation & User Experience**
+10. **As a user**, I want to navigate between Home, Submit Help, and Volunteer pages easily, so that I can access features without confusion.  
+11. **As a user**, I want the interface to work on both mobile and desktop, so that I can use the platform from any device.  
+12. **As a user**, I want to know my online/offline status, so that I understand the state of my request submissions.  
+
+---
+
+### Notes
+- Each user story can later be linked to **test cases** to verify functionality.  
+- Future enhancements like dashboards, notifications, and analytics can have additional user stories.

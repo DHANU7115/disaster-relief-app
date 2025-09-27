@@ -1,0 +1,366 @@
+/* ==========================
+   Global Styles
+========================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  /* ==========================
+     Container
+  ========================== */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* ==========================
+     Header
+  ========================== */
+  header {
+    background: linear-gradient(90deg, #0b3d91, #4c6ef5, #7b5fff);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  header p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffd700;
+  }
+  
+  .sync-status {
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .sync-status.online {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .sync-status.offline {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    display: none;
+  }
+  
+  @media(max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  /* ==========================
+     Hero Section - Home
+  ========================== */
+  .hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    background: url('https://images.unsplash.com/photo-1601979031344-0213d4c3e60d') center/cover no-repeat;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .btn-red {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  .btn-red:hover {
+    background-color: #d62828;
+  }
+  
+  .btn-green {
+    background-color: #2a9d8f;
+    color: #fff;
+  }
+  
+  .btn-green:hover {
+    background-color: #21867a;
+  }
+  
+  /* ==========================
+     Features Section - Home
+  ========================== */
+  .features-section {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  
+  .features-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #0b3d91;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    color: #0b3d91;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* ==========================
+     Request Form
+  ========================== */
+  .request-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+  }
+  
+  .request-form h2 {
+    color: #0b3d91;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .request-form .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .request-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+  
+  .request-form input,
+  .request-form textarea,
+  .request-form select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .request-form button {
+    background-color: #0b3d91;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .request-form button:hover {
+    background-color: #0950c1;
+  }
+  
+  .offline-warning {
+    color: #dc3545;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  
+  /* ==========================
+     Volunteer Dashboard
+  ========================== */
+  .filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .filters label {
+    font-weight: 600;
+    color: #0b3d91;
+  }
+  
+  .filters select {
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .requests-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .request-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    border-left: 5px solid #0b3d91;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .request-card h3 {
+    color: #0b3d91;
+  }
+  
+  .request-card p {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+  }
+  
+  .request-card button {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+  }
+  
+  .request-card button:hover {
+    background-color: #0950c1;
+  }
+  
+  .request-card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Map */
+  .leaflet-container {
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* ==========================
+     Responsive
+  ========================== */
+  @media(max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

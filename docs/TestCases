@@ -1,0 +1,48 @@
+# Test Cases: Disaster Relief Volunteer Portal
+
+This document lists **all test cases** to verify the functionality of the Disaster Relief Volunteer Portal.
+
+---
+
+## **1. Help Request Form**
+
+| Test Case ID | Test Case Description                   | Steps                                                                 | Expected Result                                           | Status |
+|--------------|----------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------|--------|
+| TC-HR-01     | Submit help request online              | Fill all form fields and submit while online                          | Request is sent to backend and confirmation received     | Pass/Fail |
+| TC-HR-02     | Submit help request offline             | Turn off internet, fill form and submit                                | Request is queued locally, queued count increases        | Pass/Fail |
+| TC-HR-03     | Auto-sync queued requests               | Reconnect internet after offline submission                             | Queued requests are automatically sent to backend       | Pass/Fail |
+| TC-HR-04     | Form validation                         | Submit form with missing or invalid data                                | Appropriate error message is displayed                  | Pass/Fail |
+
+---
+
+## **2. Volunteer Registration Form**
+
+| Test Case ID | Test Case Description                   | Steps                                                                 | Expected Result                                           | Status |
+|--------------|----------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------|--------|
+| TC-VR-01     | Submit volunteer registration online    | Fill all required fields and submit                                    | Volunteer info saved in backend and confirmation shown   | Pass/Fail |
+| TC-VR-02     | Form validation                         | Submit incomplete or invalid form                                      | Error message displayed                                   | Pass/Fail |
+
+---
+
+## **3. Navigation & UI**
+
+| Test Case ID | Test Case Description                   | Steps                                                                 | Expected Result                                           | Status |
+|--------------|----------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------|--------|
+| TC-UI-01     | Navigate between pages                  | Click links in header navigation                                       | Correct page opens without errors                        | Pass/Fail |
+| TC-UI-02     | Mobile hamburger menu                    | Open and close mobile menu                                             | Menu expands/collapses correctly                          | Pass/Fail |
+| TC-UI-03     | Responsive design                        | Open app on desktop, tablet, and mobile                                | Layout adapts correctly to different screen sizes       | Pass/Fail |
+
+---
+
+## **4. Offline-First Features**
+
+| Test Case ID | Test Case Description                   | Steps                                                                 | Expected Result                                           | Status |
+|--------------|----------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------|--------|
+| TC-OFF-01    | Detect offline status                    | Turn off internet                                                     | Header shows "Offline" and queued requests counted      | Pass/Fail |
+| TC-OFF-02    | Detect online status                     | Turn internet back on                                                 | Header shows "Online" and queued requests sync automatically | Pass/Fail |
+
+---
+
+### Notes
+- All test cases can be run manually for the current PoC.  
+- Automated tests can be added later using **Playwright / Jest / React Testing Library**.
